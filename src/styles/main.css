@@ -1,0 +1,43 @@
+.title-page {
+  height: 15vw !important;
+}
+.title-cine {
+  height: 25vw !important;
+}
+.movie-search {
+  height: 110px !important;
+  background-color: rgb(236, 236, 236);
+}
+.movie-search a {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 568px) {
+}
+
+@media screen and (min-width: 720px) {
+  .img-carousel {
+    height: 300px !important;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .img-carousel {
+    height: 320px !important;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .img-carousel {
+    height: 340px !important;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .img-carousel {
+    height: 360px !important;
+  }
+  .title-page {
+    height: 20vh !important;
+  }
+}
