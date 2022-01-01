@@ -1,0 +1,264 @@
+{
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Nitsuh Abebe",
+      "title": "John Wilson Is Making the Least Predictable Show on TV",
+      "description": "In the second season of “How To With John Wilson,” the documentary filmmaker shows off his penchant for mutating the mundane into the vivid and extraordinary.",
+      "url": "https://www.nytimes.com/2021/12/07/magazine/how-to-john-wilson.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/12/magazine/12mag-wilson-1-copy/12mag-wilson-1-copy-facebookJumbo-v2.jpg",
+      "publishedAt": "2021-12-07T10:00:12Z",
+      "content": "The impulse to hoard funny chunks of reality is reflected in Wilsons apartment, the same rooms where he films his cat vomiting or his ruined risotto getting flushed down the toilet. (The toilet, he s… [+4386 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Germain Lussier",
+      "title": "A Goonies TV Show Has Truffle Shuffled to Disney+",
+      "description": "The idea seemed as bright and shiny as a marble bag full of jewels: a TV show about a teacher who decides to help some of her students do a shot-by-shot remake of the classic 1980s adventure The Goonies. However, the network on board, Fox, disagreed and burie…",
+      "url": "https://gizmodo.com/a-goonies-tv-show-has-truffle-shuffled-to-disney-1848222809",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/0dfa404c9d8b2352a89756e1d7d4cab1.jpg",
+      "publishedAt": "2021-12-15T23:30:00Z",
+      "content": "The idea seemed as bright and shiny as a marble bag full of jewels: a TV show about a teacher who decides to help some of her students do a shot-by-shot remake of the classic 1980s adventure The Goon… [+2043 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Rob Bricken",
+      "title": "Sure Sounds Like Children Are Gonna Die on The Witcher Kids' Show",
+      "description": "The Witcher’s much anticipated second season finally debuts on Netflix this Friday, but there’s so much more Witcher-iness to come. Beyond the prequel TV series, the second anime movie, and already announced third season of the flagship show, there’s also a k…",
+      "url": "https://gizmodo.com/sure-sounds-like-children-are-gonna-die-on-the-witcher-1848220067",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6d56863e12bd8a123a4746ca42abeaee.jpg",
+      "publishedAt": "2021-12-15T22:00:00Z",
+      "content": "The Witchers much anticipated second season finally debuts on Netflix this Friday, but theres so much more Witcher-iness to come. Beyond the prequel TV series, the second anime movie, and already ann… [+4012 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Nicole Lee",
+      "title": "Amazon Echo Show 15 review: A big device for a small audience",
+      "description": "Amazon’s Echo Show line has been around for four years, but until now the screen sizes have ranged from five to10 inches, making it ideal as a multipurpose bedside alarm or a companion screen in the kitchen. The 15-inch Echo Show 15, available now, is by far …",
+      "url": "https://www.engadget.com/amazon-echo-show-15-review-163035555.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-12/7cab2530-6241-11ec-b5ae-0fe0e3321926",
+      "publishedAt": "2021-12-24T17:00:35Z",
+      "content": "Amazons Echo Show line has been around for four years, but until now the screen sizes have ranged from five to10 inches, making it ideal as a multipurpose bedside alarm or a companion screen in the k… [+8772 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Jon Fingas",
+      "title": "No one asked for lickable TV, and yet...",
+      "description": "Never mind smelling what's on screen — would you like to taste what you see? Probably not, but one scientist is pressing forward anyway. ASCII and Reuters report Meiji University professor Homei Miyashita has presented Taste the TV, a set you can lick to get …",
+      "url": "https://www.engadget.com/taste-the-tv-lickable-screen-173805499.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-12/945a03e0-63f4-11ec-afeb-c4b0c40c6fdf",
+      "publishedAt": "2021-12-23T17:38:05Z",
+      "content": "Never mind smelling what's on screen would you like to taste what you see? Probably not, but one scientist is pressing forward anyway. ASCII and Reuters report Meiji University professor Homei Miyash… [+1251 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Mariella Moon",
+      "title": "LG's design-focused OLED Evo TV has a motorized cover",
+      "description": "LG's latest OLED TV was created for those who prefer something with an unusual design and wouldn't look out of place with their furniture and painting collection. The Korean company has given its 65-inch LG OLED Evo TV a makeover, made it part of its Object C…",
+      "url": "https://www.engadget.com/lg-design-focused-oled-tv-moving-cover-131546091.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-12/9dc1b480-59ab-11ec-b6bb-44be2a90d8e2",
+      "publishedAt": "2021-12-10T13:15:46Z",
+      "content": "LG's latest OLED TV was created for those who prefer something with an unusual design and wouldn't look out of place with their furniture and painting collection. The Korean company has given its 65-… [+1142 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Nicole Lee",
+      "title": "2021 was the year that streaming pushed our cultural buttons",
+      "description": "To no one’s surprise, 2020 was a bumper year for streaming. With people stuck at home last year, services saw millions of new subscribers — Netflix attracted 16 million customers in just three months, alone. The early part of 2021 continued that trend, but as…",
+      "url": "https://www.engadget.com/state-of-streaming-2021-143056372.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-12/d923a6b0-5efa-11ec-bfbd-c53624d39063",
+      "publishedAt": "2021-12-21T14:30:56Z",
+      "content": "To no ones surprise, 2020 was a bumper year for streaming. With people stuck at home last year, services saw millions of new subscribers Netflix attracted 16 million customers in just three months, a… [+8153 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Emma Roth",
+      "title": "LG Display shows off a versatile lineup of transparent OLED screens at CES 2022",
+      "description": "LG Display has showed off four new displays that it’s bringing to CES 2022: the OLED Shelf, Shopping Managing Showcase, Show Window, and Smart Window.",
+      "url": "https://www.theverge.com/2021/12/26/22854293/lg-display-oled-shelf-show-smart-window-transparent",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/PdHC7pxVROh153kqqE3P58n8xUw=/0x700:4968x3301/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23126507/lg_display_oled_shelf.jpg",
+      "publishedAt": "2021-12-27T01:00:00Z",
+      "content": "The displays are just concepts for now\r\nThe OLED Shelf displaying a piece of art.\r\nPhoto by LG Display\r\nLG Display has come up with more uses for transparent screens with its innovative new concepts … [+2415 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Emma Roth",
+      "title": "Meta Portal now lets you view Facebook Stories hands-free",
+      "description": "The Meta Portal (previously the Facebook Portal) has gotten a slew of new features, including one that lets you browse through your Facebook friends’ Stories by using the command, “Hey Portal, show me Stories.” Meta now also lets you view recent Facebook post…",
+      "url": "https://www.theverge.com/2021/12/7/22822879/facebook-portal-stories-hands-free",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/G8kRyJwDMKmLJp0dPFlPuuTXN8Y=/0x38:1920x1043/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23071103/portal_calling_features_new.jpeg",
+      "publishedAt": "2021-12-07T23:36:14Z",
+      "content": "Hey Portal, show me Stories\r\nIf you buy something from a Verge link, Vox Media may earn a commission. See our ethics statement.\r\nPhoto by Facebook\r\nThe Meta (formerly Facebook) Portal is getting a nu… [+2143 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNET"
+      },
+      "author": "Craig Cole",
+      "title": "2022 Mercedes-Benz EQS recalled for infotainment issue - Roadshow",
+      "description": "A screen could inadvertently show TV programming or the internet while the car is being driven, which increases the risk of driver distraction.",
+      "url": "https://www.cnet.com/roadshow/news/2022-mercedes-benz-eqs-recalled-for-infotainment-issue/",
+      "urlToImage": "https://www.cnet.com/a/img/dODZ-AqmUlVCSSpb-PI1rGsE1f4=/1200x630/2021/09/06/aa0572a1-7319-498e-b39f-969aba8ef693/eqe-ogi.jpg",
+      "publishedAt": "2021-12-10T21:55:19Z",
+      "content": "The Mercedes-Benz EQS is one of the sleekest-looking cars on the market today.\r\nAntuan Goodwin/Roadshow\r\nThe Mercedes-Benz EQS is a lovely piece of design and engineering. A flagship-caliber luxury s… [+1711 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Noel Murray",
+      "title": "‘Annie Live!’ Review: The Sun, as Always, Came Out",
+      "description": "NBC’s latest live musical had some gaffes. But after another challenging year, it was a treat to watch talented people sing and dance their way through a hopeful bipartisan fable.",
+      "url": "https://www.nytimes.com/2021/12/03/arts/television/annie-live-review.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/03/arts/03annie-review/03annie-review-facebookJumbo.jpg",
+      "publishedAt": "2021-12-03T14:19:23Z",
+      "content": "The show has been criticized over the years for taking so many liberties with Grays original comics, which were weighted more toward rollicking adventure than to domestic drama and which often served… [+1446 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Salamishah Tillet",
+      "title": "In 2021, Black Boyhood Got More Complex on TV",
+      "description": "Shows like “The Wonder Years,” “Swagger” and “Colin in Black and White” offered Black coming-of-age narratives that challenged longstanding TV stereotypes.",
+      "url": "https://www.nytimes.com/2021/12/21/arts/television/black-boyhood-wonder-years-colin-in-black-and-white.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/21/arts/21wonder/21wonder-facebookJumbo.jpg",
+      "publishedAt": "2021-12-22T04:26:38Z",
+      "content": "And while this makes his character refreshing, it also signals a significant turn in television. The Wonder Years, on ABC, is part of a group of new shows, including Swagger on Apple TV+ and Netflixs… [+1930 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Yomi Adegoke",
+      "title": "Don’t mention Love Island! The reality TV stars shunning their roots",
+      "description": "If you renounce your reality past, will you suddenly make it as a model? Love Island’s Maura Higgins is one of many ex-contestants who think soBroadly speaking, there are now two types of reality TV star gracing screens. There are those who exist only within …",
+      "url": "https://amp.theguardian.com/tv-and-radio/2021/dec/09/dont-mention-love-island-the-reality-tv-stars-shunning-their-roots",
+      "urlToImage": "https://i.guim.co.uk/img/media/be61b2c30c41f74a16ef499694edaea3daabc237/0_0_3471_2084/master/3471.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=49a9109b611db95560b5f62c7cc4dc68",
+      "publishedAt": "2021-12-09T13:00:12Z",
+      "content": "Broadly speaking, there are now two types of reality TV star gracing screens. There are those who exist only within the confines of the genre, suspended in a Groundhog Day cycle as they jump from sho… [+5388 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "https://www.facebook.com/bbcnews",
+      "title": "Golden Girl actress Betty White dies aged 99",
+      "description": "A look back at the life and career of the comedy actress, \"American institution\" and animal activist who has died aged 99.",
+      "url": "https://www.bbc.co.uk/news/entertainment-arts-53723448",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/806D/production/_113877823_gettyimages-115395819.jpg",
+      "publishedAt": "2021-12-31T19:43:03Z",
+      "content": "Image source, Getty Images\r\nBetty White was US television's Golden Girl with the heart of gold, celebrated for her comic acting abilities from TV's early days up to the 21st Century, while remaining … [+5329 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "James Vincent",
+      "title": "Peloton responds to surprise death in And Just Like That... with new commercial",
+      "description": "Peloton has released a commercial responding to a plot-line in the Sex and the City reboot in which a character dies after a work-out on one of the company’s bikes. Peloton’s stock originally fell in response to the fictional death in the HBO Max show And Jus…",
+      "url": "https://www.theverge.com/2021/12/13/22831861/peloton-and-just-like-that-big-commercial-response",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/MLOjr01J1kGg0ufYjsm0K1vgHhk=/0x10:2040x1078/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22233857/akrales210108_4344_0103.jpg",
+      "publishedAt": "2021-12-13T10:14:29Z",
+      "content": "Photo by Amelia Holowaty Krales / The Verge\r\n\n \n\n Peloton has responded to a plot-line in HBO Max’s new Sex and the City reboot, And Just Like That..., turning around a commercial in less than 48 hou… [+2468 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "James Poniewozik",
+      "title": "Review: ‘And Just Like That,’ It All Went Wrong",
+      "description": "The “Sex and the City” revival is part dramedy about heartbreak, part awkward bid at relevance.",
+      "url": "https://www.nytimes.com/2021/12/09/arts/television/review-and-just-like-that.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/10/arts/09satc-review/09satc-review-facebookJumbo.jpg",
+      "publishedAt": "2021-12-09T18:31:16Z",
+      "content": "But if you were expecting a frothy cocktail to take your mind off the worlds troubles, the premiere throws that drink in your face. Here is your last warning if you care about spoilers: Big dies of a… [+1905 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Tim Dowling",
+      "title": "Tim Dowling: there’s a must-watch new TV show. But how on Earth do we actually watch it?",
+      "description": "New boxes, different packages, passwords … watching TV is a lot more stressful than gazing out of my windowThe big cherry tree in the garden clung to its yellowing foliage throughout the damp, still autumn, then shed the lot in two days.Beyond the branches li…",
+      "url": "https://amp.theguardian.com/lifeandstyle/2021/dec/11/tim-dowling-theres-a-must-watch-new-tv-show-but-how-on-earth-do-we-actually-watch-it",
+      "urlToImage": "https://i.guim.co.uk/img/media/25408558d376e8065aafdea2d84973dabd4ae010/0_249_7421_4452/master/7421.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=71618e62610071d8a23a46f922903c42",
+      "publishedAt": "2021-12-11T06:00:02Z",
+      "content": "The big cherry tree in the garden clung to its yellowing foliage throughout the damp, still autumn, then shed the lot in two days.\r\nBeyond the branches lie vistas unseen for months. I spend a half-ho… [+4106 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Trish Bendix",
+      "title": "Late Night Praises Fox News Hosts for Their Acting Skills",
+      "description": "The news that Fox News anchors sent texts on Jan. 6 urging President Trump to speak out against the insurrection while blaming antifa on air was the talk of late night on Tuesday.",
+      "url": "https://www.nytimes.com/2021/12/15/arts/television/colbert-fox-trump-texts.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/15/arts/15latenight/15latenight-facebookJumbo.png",
+      "publishedAt": "2021-12-15T06:41:09Z",
+      "content": "Gee, if only they had some sort of media outlet where they could have said that publicly. JIMMY KIMMEL\r\nThis is like finding out the flight attendant whos been telling you that its just a little turb… [+740 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Jonathan Abrams",
+      "title": "On ‘The NHL on TNT’ Wayne Gretzky Finds Himself as the Rookie",
+      "description": "Turner Sports, new to hockey, wants to give U.S. fans a better viewing experience, using faster cuts and better camera angles, similar to the TV presentation in Canada.",
+      "url": "https://www.nytimes.com/2021/12/03/sports/hockey/turner-sports-nhl-tnt-gretzky-bissonnette.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/11/26/multimedia/26nhl-broadcast/26nhl-broadcast-facebookJumbo.jpg",
+      "publishedAt": "2021-12-03T12:00:07Z",
+      "content": "The easy formula for Turner to replicate would be its popular Inside the NBA studio show, shot in nearby Studio J. But the personalities of Charles Barkley, Ernie Johnson, Shaquille ONeal and Kenny S… [+1349 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "PA Media",
+      "title": "Rachel Riley awarded £10,000 damages over ex-Corbyn aide’s tweet",
+      "description": "Judge says TV presenter proved Laura Murray’s post had caused serious harm to her reputationThe television presenter Rachel Riley has been awarded £10,000 in damages by a high court judge after suing a former aide to Jeremy Corbyn for libel.Riley, 35, the num…",
+      "url": "https://amp.theguardian.com/uk-news/2021/dec/20/rachel-riley-damages-over-ex-corbyn-aide-tweet",
+      "urlToImage": "https://i.guim.co.uk/img/media/8f5b01c9326d34290470559ba6ef10d1ee6be281/40_93_3093_1856/master/3093.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=72705abbae1f801718dae95408a564db",
+      "publishedAt": "2021-12-20T11:42:47Z",
+      "content": "The television presenter Rachel Riley has been awarded £10,000 in damages by a high court judge after suing a former aide to Jeremy Corbyn for libel.\r\nRiley, 35, the numbers expert on the Channel 4 s… [+2731 chars]"
+    }
+  ]
+}

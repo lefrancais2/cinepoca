@@ -1,12 +1,15 @@
-import filmadora from '../assets/filmadora.svg';
+// import filmadora from '../assets/filmadora.svg';
+import cinta from '../assets/cinta_white.svg';
+import "../styles/header.css";
 
 const Header = () => {
     return (
-        <header className="flex-grow-0 position-sticky top-0 z-12">
+        <header className="position-sticky top-0">
             <nav className="navbar navbar-expand-md navbar-light bg-warning">
-                <div className="container-fluid">
+                <div className="container-fluid items-navbar">
                     <a className="navbar-brand fw-bold" href="/">
-                        <img src={filmadora} width="40" height="40" alt="" /> 
+                        {/* <img src={filmadora} width="40" height="40" alt="" /> */}
+                        <img src={cinta} width="40" height="40" alt="" />
                         CINEPOCA
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,16 +1,279 @@
+main section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95vw;
+}
+
 .title-page {
   height: 15vw !important;
+}
+
+@media screen and (min-width: 756px) {
+  .title-page {
+    height: 18vw !important;
+  }
+  h1.fw-bold svg {
+    width: 80px;
+    height: 80px;
+    color: #eabb00;
+  }
 }
 .title-cine {
   height: 25vw !important;
 }
+
+/********************** Seccion Buscador ***************************/
 .movie-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.movie-search,
+.movie-slider {
   height: 110px !important;
   background-color: rgb(236, 236, 236);
 }
 .movie-search a {
   font-size: 14px;
 }
+@media screen and (min-width: 768px) {
+  .movie-search {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .movie-search:first-child {
+    flex-grow: 2;
+  }
+}
+/********************** Fin Seccion Buscador ***********************/
+
+/********************** Seccion ListaEstrenosMasEsperados ***************************/
+.estrenos-esperados-title {
+  margin-bottom: 1rem;
+}
+.estrenos-esperados-title h3 {
+  margin-bottom: 0px;
+}
+.estrenos-esperados-article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.estrenos-esperados-pelicula {
+  font-size: 0.8125rem;
+  display: block;
+  flex-grow: 1;
+}
+.estrenos-esperados-pelicula p {
+  margin-bottom: 0px;
+}
+.estrenos-esperados-cine {
+}
+.estrenos-esperados-cine span {
+  width: 100%;
+  background-color: aqua;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 25px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #eabb00;
+  background-color: #ffea94;
+  margin-right: 8px;
+}
+.estrenos-esperados-cine a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.collapse-premiere {
+  font-size: 0.8rem;
+  text-align: center;
+}
+/********************** Fin Seccion ListaEstrenosMasEsperados ***************************/
+
+/********************** Inicio Seccion Streaming ***************************/
+.title-streaming-top {
+  position: relative;
+  margin-bottom: 20px;
+}
+.title-streaming:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2.5rem;
+  width: 5rem;
+  height: 0.25rem;
+  background: #fecc00;
+}
+.title-streaming h2 {
+  text-align: center;
+  padding: 1.25rem 0.625rem 0;
+  /* border-top: thick solid #fecc00; */
+}
+.streaming-subtitle:hover {
+  color: rgba(77, 176, 233, 0.918);
+}
+
+.streaming-card {
+  position: relative;
+  width: 320px;
+  margin-right: 50px;
+}
+.streaming-card figure img {
+  height: 220px;
+  object-fit: cover;
+}
+/* .streaming-card.text-decoration-none:hover {
+  color: rgb(31, 15, 102);
+  opacity: 0.6;
+  transition: all 1s ease-in;
+} */
+.streaming-card .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* left: 0; */
+  left: -160px;
+  bottom: 0;
+  /* width: 100%;
+  height: 220px; */
+  width: 320px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.streaming-card .layer p {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.streaming-card .layer p:hover {
+  color: rgba(77, 176, 233, 0.918);
+  transition: all 0.5s ease-in;
+}
+
+@keyframes carousel-images {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-33.33%);
+  }
+  66% {
+    transform: translateX(-66.66%);
+  }
+}
+.carousel-image-0,
+.carousel-image-series-0 {
+  transform: translateX(0%);
+}
+.carousel-image-33,
+.carousel-image-series-33 {
+  transform: translateX(-33.33%);
+}
+.carousel-image-66,
+.carousel-image-series-66 {
+  transform: translateX(-66.66%);
+}
+.streaming-carousel .carousel,
+.streaming-carousel-series .carousel-series {
+  /* padding: 2rem 0; */
+  max-width: 1050px;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.streaming-carousel .carousel .slides,
+.streaming-carousel-series .carousel-series .slides-series {
+  padding-left: 0;
+  width: 300%;
+  height: 220px;
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+  animation: carousel-images ease-in-out;
+}
+.streaming-carousel .carousel .slides .slide,
+.streaming-carousel-series .carousel-series .slides-series .slide-series {
+  margin-right: 30px;
+}
+.streaming-carousel-btn,
+.streaming-carousel-btn-series {
+  width: 100%;
+  height: 30px;
+}
+.streaming-carousel-btn button,
+.streaming-carousel-btn-series button {
+  background-color: transparent;
+  border: none;
+  color: rgb(138, 136, 136);
+}
+.streaming-carousel-btn button i,
+.streaming-carousel-btn-series button i {
+  font-size: 20px;
+}
+.streaming-carousel-btn .btn-slider-left,
+.streaming-carousel-btn-series .btn-slider-left-series {
+  right: 25px;
+}
+.streaming-carousel-btn .btn-slider-right,
+.streaming-carousel-btn-series .btn-slider-right-series {
+  right: 0;
+}
+/********************** Fin Seccion Streaming ***************************/
+
+/********************** Fin Seccion News Movie ***************************/
+.subtitle-news {
+  margin-bottom: 20px;
+}
+.block-articles-movie-news {
+  margin-bottom: 1rem;
+}
+.block-info-movie-news {
+  margin-left: 1.5rem;
+}
+.news-info h5 {
+  font-size: 12px;
+}
+.link-title-news {
+}
+.link-title-news a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.link-title-news a:hover {
+  color: rgba(77, 176, 233, 0.918);
+  transition: all 0.5s ease-in-out;
+}
+.img-news-thumb-block {
+  /* width: 240px;
+  height: 135px; */
+  width: 50vh;
+  background-color: #eabb00;
+}
+/********************** Fin Seccion News Movie ***************************/
 
 @media screen and (max-width: 568px) {
 }
@@ -36,8 +299,5 @@
 @media screen and (min-width: 1020px) {
   .img-carousel {
     height: 360px !important;
-  }
-  .title-page {
-    height: 20vh !important;
   }
 }

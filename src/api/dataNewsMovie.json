@@ -1,0 +1,264 @@
+{
+  "articles": [
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Kris Holt",
+      "title": "Apple snaps up a movie about Theranos founder Elizabeth Holmes",
+      "description": "Apple will fund and distribute a long-in-the-works movie about embattled Theranos founder Elizabeth Holmes. Bad Blood will star Jennifer Lawrence as Holmes, while Adam McKay will write and direct. Both are producers on the project, which is a coproduction bet…",
+      "url": "https://www.engadget.com/apple-theranos-elizabeth-holmes-movie-200124528.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-11/36b91460-5797-11ec-bfdf-95b99a3c8972",
+      "publishedAt": "2021-12-07T20:01:24Z",
+      "content": "Apple will fund and distribute a long-in-the-works movie about embattled Theranos founder Elizabeth Holmes. Bad Blood will star Jennifer Lawrence as Holmes, while Adam McKay will write and direct. Bo… [+1289 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Kim Lyons",
+      "title": "A new Matrix Resurrections trailer is all about change",
+      "description": "The latest trailer for The Matrix Resurrections doesn’t give a lot of insight about the new movie, but we get some flashbacks to the first movie from 1999 and a clear sense that things have definitely changed.",
+      "url": "https://www.theverge.com/2021/12/1/22812697/new-matrix-resurrections-trailer-warner-bros-keanu-reeves",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/4sM1ihE4vYxp2O06e9Tr1SSm8FY=/178x0:1735x815/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23056602/trinity_melting.PNG",
+      "publishedAt": "2021-12-01T22:29:39Z",
+      "content": "Warner Bros.\r\n\n \n\n Let’s get something out of the way: this is The Verge, and if there is any movie we are going to cover the shit out of, it’s The Matrix Resurrections — even if its new trailer is l… [+1945 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Alex Heath",
+      "title": "Keanu Reeves and Carrie-Anne Moss on making The Matrix Awakens with Epic Games",
+      "description": "The two stars of The Matrix franchise talk about their new interactive Unreal Engine 5 experience with Epic Games, the Matrix Resurrections movie, and more.",
+      "url": "https://www.theverge.com/22825102/keanu-reeves-carrie-anne-moss-interview-matrix-awakens-epic-games",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/VGssw-V2N1VYzu-mXH1Cwllm5Dw=/345x158:1719x877/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23077868/vpavic_211203_4921_0002.jpg",
+      "publishedAt": "2021-12-10T04:00:00Z",
+      "content": "We interviewed the stars of the Matrix movies\r\nHow do we know what is real?\r\nIts a telling question asked by a seemingly real-life Keanu Reeves early on in The Matrix Awakens, a playable tech demo bu… [+3015 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Germain Lussier",
+      "title": "Two Disney Legends Are Tackling an Animated DC Movie",
+      "description": "It’s not every day that two of the most famous directors in animation history jump into the world of comic books, but that’s about to happen. Directors Ron Clements and John Musker, who made films you may have heard of like Aladdin, The Little Mermaid, and Mo…",
+      "url": "https://gizmodo.com/two-disney-legends-are-tackling-an-animated-dc-movie-1848159172",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/7fa43ad4cdc0152aecebe0adad2c3333.jpg",
+      "publishedAt": "2021-12-03T23:45:00Z",
+      "content": "Its not every day that two of the most famous directors in animation history jump into the world of comic books, but thats about to happen. Directors Ron Clements and John Musker, who made films you … [+1695 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "James Whitbrook and Gordon Jackson",
+      "title": "Patty Jenkins' Rogue Squadron Movie Is Back In Play",
+      "description": "Of course a third Venom movie is on the way. New Spider-Man: No Way Home footage gives a better glimpse at its multiversal menaces. A former Power Ranger heads behind the camera on Superman & Lois to give us a look at Clark’s updated suit. Plus, what’s coming…",
+      "url": "https://gizmodo.com/patty-jenkins-rogue-squadron-movie-is-back-in-play-1848163665",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/02b456f0fa1dd39e3cfbeb1c742b16b6.png",
+      "publishedAt": "2021-12-07T14:10:00Z",
+      "content": "Of course a third Venom movie is on the way. New Spider-Man: No Way Home footage gives a better glimpse at its multiversal menaces. A former Power Ranger heads behind the camera on Superman &amp; Loi… [+3357 chars]"
+    },
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "https://www.facebook.com/bbcnews",
+      "title": "83 movie: Reliving India’s epic cricket triumph",
+      "description": "A Bollywood ode to India's 1983 cricket world cup win recreates one of the greatest upsets in sports history.",
+      "url": "https://www.bbc.co.uk/news/world-asia-india-59731621",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/17DCB/production/_122493779_83.jpg",
+      "publishedAt": "2021-12-28T00:13:07Z",
+      "content": "Image source, Reliance Entertainment\r\nImage caption, 83 attempts to recreate the magic of India's 1983 cricket world cup win for millennials\r\nA new Bollywood film - 83 - tells the story of India's hi… [+5864 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Joel Cunningham",
+      "title": "30 of the Best Movies of 2021 You Can Watch at Home Right Now",
+      "description": "It has been a good year for movies. Not a great year for movie theaters, though.Twenty-nineteen, the last year in which box office returns were unaffected by the pandemic, U.S. theaters banked $11.4 billion in ticket sales. Last year, that lofty total dropped…",
+      "url": "https://lifehacker.com/30-of-the-best-movies-of-2021-you-can-watch-at-home-rig-1848154310",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/a9df11699fcbb045f5443f9b90bdb0ed.jpg",
+      "publishedAt": "2021-12-03T18:00:00Z",
+      "content": "It has been a good year for movies. Not a great year for movie theaters, though.\r\nTwenty-nineteen, the last year in which box office returns were unaffected by the pandemic, U.S. theaters banked $11.… [+1863 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Stephen Johnson",
+      "title": "How to Prepare for a Solar Flare Hitting Earth (Because It's Probably Going to Happen)",
+      "description": "In the Tom Hanks movie Finch, a massive solar flare destroys the ozone layer, annihilating almost all life on Earth (and leading to the invention of annoying robots). While a mass coronal ejection really could hit Earth at any time—a sun-like star 100 light y…",
+      "url": "https://lifehacker.com/how-to-prepare-for-a-solar-flare-hitting-earth-because-1848076402",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/559fc53c1c2db96fe7149872bce4de86.jpg",
+      "publishedAt": "2021-12-10T14:00:00Z",
+      "content": "In the Tom Hanks movie Finch, a massive solar flare destroys the ozone layer, annihilating almost all life on Earth (and leading to the invention of annoying robots). While a mass coronal ejection re… [+6203 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Germain Lussier",
+      "title": "James Cameron Explains Why the Original Aliens Poster Is So Basic",
+      "description": "Did you know James Cameron used to make movie posters? It’s true. In his new book, Tech Noir: The Art of James Cameron, the director of Terminator, Avatar, and Aliens talks about his time creating posters for an old movie company called Saturn, not even watch…",
+      "url": "https://gizmodo.com/james-cameron-explains-why-the-original-aliens-poster-i-1848196917",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/47280408d49be9eb8da4ae1aa53c03cb.jpg",
+      "publishedAt": "2021-12-11T00:00:00Z",
+      "content": "Did you know James Cameron used to make movie posters? Its true. In his new book, Tech Noir: The Art of James Cameron, the director of Terminator, Avatar, and Aliens talks about his time creating pos… [+3213 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Joel Cunningham",
+      "title": "What's Coming to Prime Video in January 2022",
+      "description": "The shift to a streaming-first business model has been rough for theater owners and a headache for Hollywood, but we aren’t talking about the people it is benefitting. Namely, all the men out there afraid to cry at the movies. Read more...",
+      "url": "https://lifehacker.com/whats-coming-to-prime-video-in-january-2022-1848246846",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/09bf56bb581ca5ce8a11496b380b0f33.jpg",
+      "publishedAt": "2021-12-20T20:00:00Z",
+      "content": "The shift to a streaming-first business model has been rough for theater owners and a headache for Hollywood, but we arent talking about the people it is benefitting. Namely, all the men out there af… [+4972 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Alix Strauss",
+      "title": "How George Clooney Cast a Young Brooklyn Resident for His Next Film",
+      "description": "Daniel Ranieri went from ranting in an online video to being cast in a Hollywood movie. But he still loves sports, games and his ‘gaga’.",
+      "url": "https://www.nytimes.com/2021/12/17/nyregion/daniel-ranieri-tender-bar.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/19/nyregion/19routine/17routine-facebookJumbo.jpg",
+      "publishedAt": "2021-12-17T10:00:25Z",
+      "content": "Daniel, 10, lives with his mother, Danielle Ranieri, 51, a public-school teacher, and his father, Stephen Cacioppo, 51, an electrician, in Dyker Heights, Brooklyn.\r\nSATURDAY SETS THE TONE If Im going… [+606 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Dave Itzkoff",
+      "title": "Will Forte Is Still Waiting for ‘MacGruber’ to Blow Up",
+      "description": "In a new Peacock series, Forte returns as the unruly “Saturday Night Live” action hero who’s once again reckoning with bombs (including his 2010 movie).",
+      "url": "https://www.nytimes.com/2021/12/08/arts/television/will-forte-macgruber.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/12/09/arts/09macgruber-a/09macgruber-a-facebookJumbo.jpg",
+      "publishedAt": "2021-12-08T20:06:23Z",
+      "content": "Over time, the reputation of the movie had nowhere to go but up. As Phillippe recalled: I would run into comedians and filmmakers who said, This is my favorite thing to watch when Im depressed. I hea… [+1390 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "James Whitbrook",
+      "title": "Part of Gundam's Hidden History Is Becoming a Movie Next Year",
+      "description": "The original Mobile Suit Gundam is an icon of classic anime—but the creatives behind it have been attempting to scrub one tiny piece of it from sight for over 40 years. Now, they’re getting a chance to revisit it, and wipe away the reasons they wanted it hidd…",
+      "url": "https://gizmodo.com/part-of-gundams-hidden-history-is-becoming-a-movie-next-1848252872",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/1187968b2e04f185a198c5a48898ed98.png",
+      "publishedAt": "2021-12-21T18:30:00Z",
+      "content": "The original Mobile Suit Gundam is an icon of classic animebut the creatives behind it have been attempting to scrub one tiny piece of it from sight for over 40 years. Now, theyre getting a chance to… [+2648 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Rob Bricken",
+      "title": "The Matrix: Resurrections Premiere Was Also a Sci-Fi Fashion Show",
+      "description": "Hollywood celebrities usually get dressed up for their big movie premieres, but many of the stars of The Matrix Resurrections decided to take it to the next level. On December 18th, Keanu Reeves, Carrie-Anne Moss, and more attended the red-carpet (technically…",
+      "url": "https://gizmodo.com/the-matrix-resurrections-premiere-was-also-a-sci-fi-fa-1848265496",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/609251d2282c06867e2eab2dfe49e91c.jpg",
+      "publishedAt": "2021-12-23T23:00:00Z",
+      "content": "Hollywood celebrities usually get dressed up for their big movie premieres, but many of the stars of The Matrix Resurrections decided to take it to the next level. On December 18th, Keanu Reeves, Car… [+254 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Rob Bricken",
+      "title": "Now Wait Just a Goddamned Minute, Spider-Man",
+      "description": "Peter Parker might have gotten the Marvel Cinematic Multiverse all settled by the end of Spider-Man: No Way Home, but it doesn’t seem Sony has managed to do the same. The end of the new Spidey movie has left the upcoming Morbius film with an extremely confusi…",
+      "url": "https://gizmodo.com/now-wait-just-a-goddamned-minute-spider-man-1848258266",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/359643640d052438c7a9ca97c4c83fe7.jpg",
+      "publishedAt": "2021-12-22T21:30:00Z",
+      "content": "Peter Parker might have gotten the Marvel Cinematic Multiverse all settled by the end of Spider-Man: No Way Home, but it doesnt seem Sony has managed to do the same. The end of the new Spidey movie h… [+3131 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Rob Bricken",
+      "title": "Sure Sounds Like Children Are Gonna Die on The Witcher Kids' Show",
+      "description": "The Witcher’s much anticipated second season finally debuts on Netflix this Friday, but there’s so much more Witcher-iness to come. Beyond the prequel TV series, the second anime movie, and already announced third season of the flagship show, there’s also a k…",
+      "url": "https://gizmodo.com/sure-sounds-like-children-are-gonna-die-on-the-witcher-1848220067",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6d56863e12bd8a123a4746ca42abeaee.jpg",
+      "publishedAt": "2021-12-15T22:00:00Z",
+      "content": "The Witchers much anticipated second season finally debuts on Netflix this Friday, but theres so much more Witcher-iness to come. Beyond the prequel TV series, the second anime movie, and already ann… [+4012 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "James Whitbrook",
+      "title": "Doctor Strange In the Multiverse of Madness' First Trailer Teases Magical Mayhem",
+      "description": "As if helping Spider-Man save the multiverse from ripping apart wasn’t enough dimensional heroics for Stephen Strange, his sophomore solo movie is preparing him to head down some dark paths--with a few old friends and an old foe ready to meet him in the multi…",
+      "url": "https://gizmodo.com/doctor-strange-in-the-multiverse-of-madness-first-trail-1848258431",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e784b389b962949315ddb3ca067faccc.png",
+      "publishedAt": "2021-12-22T16:10:00Z",
+      "content": "As if helping Spider-Man save the multiverse from ripping apart wasnt enough dimensional heroics for Stephen Strange, his sophomore solo movie is preparing him to head down some dark paths--with a fe… [+1041 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "James Whitbrook, Cheryl Eddy, Germain Lussier, and Rob Bricken",
+      "title": "The 14 Best (and 9 Worst) Sci-Fi, Fantasy, Horror, and Superhero Movies of 2021",
+      "description": "It’s time: with days left to go, we’re pretty much done with big movie releases in 2021. So at last, we can look back and decide what were the real highs (and real lows) of a very peculiar year for movies, as the world ummed-and-ahhed its way back to theaters…",
+      "url": "https://gizmodo.com/the-14-best-and-9-worst-sci-fi-fantasy-horror-and-1848261181",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/6643ac525c4d7a33885dc3cc5aadfaeb.png",
+      "publishedAt": "2021-12-27T17:00:00Z",
+      "content": "We dont write about too many documentaries here at io9, but Woodlands Dark and Days Bewitched is such an achievementnot to mention highly relevant to our folk horror-obsessed, Blood on Satans Claw-lo… [+640 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Cheryl Eddy",
+      "title": "The Advent Calendar Is Essential Holiday Horror Viewing",
+      "description": "The Advent Calendar is the perfect movie to watch in December—if you’re the sort of person who doesn’t mind a few buckets of blood added to their wholesome holiday traditions. Excellently plotted and acted, with tension that builds to near-unbearable heights,…",
+      "url": "https://gizmodo.com/the-advent-calendar-is-essential-holiday-horror-viewing-1848131906",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2842acc6ee4c792e0975a0c42d491b47.png",
+      "publishedAt": "2021-12-02T18:00:00Z",
+      "content": "The Advent Calendar is the perfect movie to watch in Decemberif youre the sort of person who doesnt mind a few buckets of blood added to their wholesome holiday traditions. Excellently plotted and ac… [+3333 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Lisa Respers France, CNN",
+      "title": "'The Matrix Resurrections:' First reactions are in",
+      "description": "Which pill will you take, love it or hate it?",
+      "url": "https://www.cnn.com/2021/12/17/entertainment/matrix-resurrections-reactions/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/210909143904-matrix-resurrections-trailer-super-tease.jpg",
+      "publishedAt": "2021-12-17T14:16:14Z",
+      "content": "There was a point in the middle of The Matrix Resurrections where I briefly thought it was the best movie ever made, and, like, I haven't convinced myself it's NOT? \r\nI lovvvvvvved it. A lotta people… [+101 chars]"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.btn-movies {
+  border-radius: 50% !important;
+  background-color: transparent;
+  border: thin solid transparent;
+  color: lightgray;
+  font-size: 2rem; /** para media query*/
+  top: -50px !important; /* para media query*/
+}
