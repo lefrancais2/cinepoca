@@ -1,8 +1,34 @@
 header {
   z-index: 999 !important;
 }
-
-@media screen and (min-width: 768px) {
+.header-message {
+  width: 100%;
+  background-color: white;
+}
+.header-message div:nth-child(1) {
+  width: 65%;
+}
+.header-message div:nth-child(1) small {
+  font-size: 11px;
+  font-weight: bold;
+}
+.nav-item .nav-link {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.btn-login-register a {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.title-header {
+  font-weight: 900;
+}
+@media screen and (max-width: 767px) {
+  .header-message {
+    display: none;
+  }
+}
+/* @media screen and (min-width: 768px) {
   nav {
     height: 80px;
     display: flex;
@@ -18,4 +44,86 @@ header {
     margin-right: auto;
     margin-left: auto;
   }
+  .header-message div:nth-child(2) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .header-message div:nth-child(1),
+  .header-message div:nth-child(3) {
+    width: 5%;
+  }
+  .header-message div:nth-child(2) small {
+    text-align: center;
+  }
+} */
+@media screen and (min-width: 768px) {
+  nav {
+    height: 80px;
+    display: flex;
+  }
+  .items-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header-message div {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar > .container-fluid.items-navbar {
+    justify-content: space-between;
+  }
+  div.collapse.navbar-collapse {
+    flex-grow: 0;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .header-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header-message div:nth-child(1) {
+    width: 65% !important;
+  }
+  .items-navbar {
+    width: 65%;
+  }
+}
+
+/* @media screen and (min-width: 1020px) {
+  .header-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header-message div:nth-child(1),
+  .header-message div:nth-child(3) {
+    width: 17.5%;
+  }
+  .header-message div:nth-child(2) {
+    width: 65% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .header-message div {
+  }
+  .header-message div:nth-child(2) small {
+    flex-grow: 1;
+  }
+} */

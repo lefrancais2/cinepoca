@@ -1,16 +1,19 @@
-const ListMoviesCard = ({data}) => {
-    return (
-        <li className="glide__slide">  
-            <article className="border border-dark">
-                <figure>
-                    <img src="https://placeimg.com/80/100/animals" alt="" />
-                </figure>
-                <figcaption>
-                    <p>Este es un ejemplo</p>
-                </figcaption>
-            </article>
-        </li>
-    )
-}
+const ListMoviesCard = ({ data }) => {
+  return (
+    <li className="slide slides-movies-today">
+      <article>
+        <figure>
+          <img
+            src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}
+            alt={data.title}
+          />
+          <figcaption>
+            <p>{data.title}</p>
+          </figcaption>
+        </figure>
+      </article>
+    </li>
+  );
+};
 
-export default ListMoviesCard
+export default ListMoviesCard;

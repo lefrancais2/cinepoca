@@ -1,34 +1,33 @@
-
 import Loader from "./Loader";
-import NewsCard from "./NewsCard"
+import NewsCard from "./NewsCard";
 
 const onlyTest = {
-    title: "'Titulares de noticias': Netflix, HBO, Amazon Prime Video, Disney+",
-    urlToImage: "https://placeimg.com/240/135/nature",
-    url: "#nada",
-}
+  title: "'Titulares de noticias': Netflix, HBO, Amazon Prime Video, Disney+",
+  urlToImage: "https://placeimg.com/240/135/nature",
+  url: "#nada",
+};
 
-const News = ({title,data,loading}) => {
-    return (
-        <div>
-            <div className="subtitle-news">
-                <h2>ÚLTIMAS NOTICIAS DE {title}</h2>
-            </div>
-            <div className="block-articles-movie-news">
-
-                {/* Inicio Solucion realizada */}
-                {/* {loading && <Loader/>}
+const News = ({ title, data, loading }) => {
+  return (
+    <div>
+      <div className="subtitle-news">
+        <h2 className="fw-bold">ÚLTIMAS NOTICIAS DE {title}</h2>
+      </div>
+      <div className="block-articles-movie-news">
+        {/* Inicio Solucion realizada */}
+        {/* {loading && <Loader/>}
                 {data && data.map((el,index) => index < 5 ? <NewsCard key={index} element={el}/> : "")} */}
-                {/* Fin Solucion realizada */}
-                
+        {/* Fin Solucion realizada */}
 
-                {/* Inicio Solo para pruebas */}
-                {!loading && data.articles.map((el,index) => index < 5 ? <NewsCard key={index} element={el}/> : "")}
-                {/* {!data && <NewsCard element={onlyTest}/>} */}
-                {/* Fin Solo para pruebas */}
+        {/* Inicio Solo para pruebas */}
+        {!loading &&
+          data.articles.map((el, index) =>
+            index < 5 ? <NewsCard key={index} element={el} /> : ""
+          )}
+        {/* {!data && <NewsCard element={onlyTest}/>} */}
+        {/* Fin Solo para pruebas */}
 
-
-                {/* <article className="d-flex flex-row justify-content-start bg-light">
+        {/* <article className="d-flex flex-row justify-content-start bg-light">
                     <figure>
                         <div>
                             <img src="https://placeimg.com/240/135/nature" alt="" />
@@ -45,10 +44,9 @@ const News = ({title,data,loading}) => {
                         </div>
                     </div>
                 </article> */}
-                
-            </div>
-        </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default News
+export default News;

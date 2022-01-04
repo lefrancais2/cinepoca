@@ -1,6 +1,14 @@
 @media screen and (min-width: 756px) {
   .container-page {
-    width: 65%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-page {
+    width: 65vw;
     margin-left: auto;
     margin-right: auto;
   }
