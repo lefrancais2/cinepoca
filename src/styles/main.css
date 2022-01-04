@@ -457,6 +457,56 @@ main section {
     width: 240px;
   }
 }
+@media screen and (min-width: 768px) {
+  .img-news-thumb-block {
+    width: 100%;
+  }
+  .img-news-thumb-block img {
+    width: 100% !important;
+    height: 180px;
+  }
+  .group-news-cine section div.block-articles-movie-news,
+  .group-news-series section div.block-articles-movie-news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    width: 100%;
+  }
+
+  .block-info-movie-news {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .block-info-movie-news div {
+    margin: 0;
+  }
+  .news-date small {
+    font-size: 10px;
+  }
+  .link-title-news a {
+    font-weight: bold;
+  }
+
+  .group-news-cine section div.block-articles-movie-news article,
+  .group-news-series section div.block-articles-movie-news article {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 31%;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .group-news-cine section div.block-articles-movie-news article figure,
+  .group-news-series section div.block-articles-movie-news article figure {
+    margin: 0;
+  }
+  div.block-info-movie-news div.link-title-news a {
+    font-size: 10px;
+  }
+}
 /********************** Fin Seccion News Movie ***************************/
 
 @media screen and (max-width: 568px) {
@@ -500,5 +550,25 @@ main section {
 @media screen and (min-width: 1020px) {
   .img-carousel {
     height: 400px !important;
+  }
+  .group-premiere-cartelera {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: inherit;
+  }
+  .group-premiere-cartelera .first-group {
+    width: 65%;
+  }
+  .group-premiere-cartelera:nth-child(1) div > section {
+    width: 100%;
+  }
+  .group-premiere-cartelera .second-group {
+    width: 35%;
+  }
+  .group-premiere-cartelera .second-group {
+    width: 100%;
   }
 }

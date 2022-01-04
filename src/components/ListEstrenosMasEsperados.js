@@ -6,6 +6,7 @@ import ListEstrenosMasEsperadosCard from "./ListEstrenosMasEsperadosCard";
 const ListEstrenosMasEsperados = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(null);
+  const [widthScreen, setWidthScreen] = useState(null);
 
   // Solo para prueba
   const valor = false;
@@ -28,6 +29,7 @@ const ListEstrenosMasEsperados = () => {
   // Inicio Solo para prueba
   useEffect(() => {
     setData(dbNextPremiere);
+
     setLoading(false);
   }, []);
   // Fin Solo para prueba
@@ -80,7 +82,7 @@ const ListEstrenosMasEsperados = () => {
           Ver más películas <i className="fas fa-chevron-down"></i>
         </a>
       </p>
-      <div className="collapse" id="collapseExample">
+      <div className="collapse show-elements-premiere" id="collapseExample">
         <div>
           {data &&
             data.results.map((element, index) =>

@@ -191,47 +191,54 @@ const Main = () => {
       </section>
       {/* Fin Buscar peliculas */}
 
-      {/* Inicio Estrenos de esta semana */}
-      <section className="mt-4 w-100 d-flex flex-row flex-wrap justify-content-start align-items-center estreno-carousel">
-        <ListMovies
-          clase=".estreno-carousel"
-          title="ESTRENOS DE ESTA SEMANA"
-          loading={loading}
-          data={dbMovieWeek.results}
-          id="0"
-        />
-      </section>
-      {/* Fin Estrenos */}
+      <section className="group-premiere-cartelera">
+        <div className="first-group">
+          {/* Inicio Estrenos de esta semana */}
+          <section className="mt-4 w-100 d-flex flex-row flex-wrap justify-content-start align-items-center estreno-carousel">
+            <ListMovies
+              clase=".estreno-carousel"
+              title="ESTRENOS DE ESTA SEMANA"
+              loading={loading}
+              data={dbMovieWeek.results}
+              id="0"
+            />
+          </section>
+          {/* Fin Estrenos */}
 
-      {/* Inicio Cartelera */}
-      <section className="mt-4 w-100 d-flex flex-row flex-wrap justify-content-start align-items-center cartelera-carousel">
-        {/* <ListMovies title="CARTELERA" loading={loading} data={dataMovieToday} /> */}
-        {/* Solo para prueba */}
-        <ListMovies
-          clase=".cartelera-carousel"
-          title="CARTELERA"
-          loading={loading}
-          data={dbMovieToday.results}
-          id="1"
-        />
-        {/* Solo para prueba */}
+          {/* Inicio Cartelera */}
+          <section className="mt-4 w-100 d-flex flex-row flex-wrap justify-content-start align-items-center cartelera-carousel">
+            {/* <ListMovies title="CARTELERA" loading={loading} data={dataMovieToday} /> */}
+            {/* Solo para prueba */}
+            <ListMovies
+              clase=".cartelera-carousel"
+              title="CARTELERA"
+              loading={loading}
+              data={dbMovieToday.results}
+              id="1"
+            />
+            {/* Solo para prueba */}
+          </section>
+          {/* Fin Cartelera */}
+        </div>
+        <div className="second-group">
+          {/* Inicio Los Estrenos mas esperados */}
+          <section className="mt-5 w-100">
+            <ListEstrenosMasEsperados />
+          </section>
+          {/* Fin Los Estrenos mas esperados */}
+        </div>
       </section>
-      {/* Fin Cartelera */}
 
-      {/* Inicio Los Estrenos mas esperados */}
-      <section className="mt-5 w-100">
-        <ListEstrenosMasEsperados />
+      <section className="group-news-cine">
+        {/* Inicio Noticias de Peliculas */}
+        <section className="mt-5 w-100">
+          {/* <News title="CINE" data={dataNewsMovie} loading={loading}/> */}
+          {/* Inicio Solo prueba */}
+          <News title="CINE" data={dbNewsMovie} loading={valor} />
+          {/* Fin Solo prueba */}
+        </section>
+        {/* Fin Noticias de Peliculas */}
       </section>
-      {/* Fin Los Estrenos mas esperados */}
-
-      {/* Inicio Noticias de Peliculas */}
-      <section className="mt-5 w-100">
-        {/* <News title="CINE" data={dataNewsMovie} loading={loading}/> */}
-        {/* Inicio Solo prueba */}
-        <News title="CINE" data={dbNewsMovie} loading={valor} />
-        {/* Fin Solo prueba */}
-      </section>
-      {/* Fin Noticias de Peliculas */}
 
       {/* STREAMING */}
       <section className="mt-5 mb-5 w-100">
@@ -274,13 +281,15 @@ const Main = () => {
       {/* Fin STREAMING */}
 
       {/* Inicio Noticias de Series */}
-      <section className="mt-5 w-100">
-        {/* <News title="SERIES" data={dataNewsSerie} loading={valor}/> */}
-        {/* Inicio Solo prueba */}
-        <News title="SERIES" data={dbNewsSeries} loading={valor} />
-        {/* Fin Solo prueba */}
+      <section className="group-news-cine">
+        <section className="mt-5 w-100">
+          {/* <News title="SERIES" data={dataNewsSerie} loading={valor}/> */}
+          {/* Inicio Solo prueba */}
+          <News title="SERIES" data={dbNewsSeries} loading={valor} />
+          {/* Fin Solo prueba */}
+        </section>
+        {/* Fin Noticias de Series */}
       </section>
-      {/* Fin Noticias de Series */}
     </main>
   );
 };

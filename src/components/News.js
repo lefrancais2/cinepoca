@@ -22,7 +22,7 @@ const News = ({ title, data, loading }) => {
         {/* Inicio Solo para pruebas */}
         {!loading &&
           data.articles.map((el, index) =>
-            index < 5 ? <NewsCard key={index} element={el} /> : ""
+            index < 6 ? <NewsCard key={index} element={el} /> : ""
           )}
         {/* {!data && <NewsCard element={onlyTest}/>} */}
         {/* Fin Solo para pruebas */}
