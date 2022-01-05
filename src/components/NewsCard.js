@@ -1,17 +1,4 @@
-const Mes = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
-];
+import { Mes, shortDate } from "../functions/functionDate";
 
 const NewsCard = ({ element }) => {
   const shortTitle = (element) => {
@@ -23,9 +10,7 @@ const NewsCard = ({ element }) => {
       return element.title;
     }
   };
-  const shortDate = (element) => {
-    return element.slice(0, element.length - 1);
-  };
+
   let fecha = new Date(shortDate(element.publishedAt));
   let fechaPublicacion = `${fecha.getDate()} de ${
     Mes[fecha.getMonth()]

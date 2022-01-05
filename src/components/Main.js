@@ -1,106 +1,48 @@
 import { helpHttp } from "../helpers/helpHttp";
-import { useEffect, useState } from "react";
-import Carousel from "./Carousel";
-import ListMovies from "./ListMovies";
+import { useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import ListEstrenosMasEsperados from "./ListEstrenosMasEsperados";
 import StreamingCarouselMovie from "./StreamingCarouselMovie";
 import StreamingCarouselSeries from "./StreamingCarouselSeries";
-import cinta from "../assets/cinta_orange.svg";
+import ApiContext from "../context/ApiContext";
+import ListMovies from "./ListMovies";
+import CineTitle from "./CineTitle";
+import Carousel from "./Carousel";
 import News from "./News";
 import Loader from "./Loader";
 import "../styles/main.css";
 import "../styles/all-page.css";
 
-// db news de prueba hecho en objetos
-import {
-  dbMovieWeek,
-  dbMovieToday,
-  dbNewsMovie,
-  dbNewsSeries,
-  dbNewsActuallyCarousel,
-} from "../api/dbNews";
-// db news de prueba hecho en objetos
+const Main = ({ dataMovieSearch, setDataMovieSearch }) => {
+  // Borrar luego del funcionamiento de la api
+  const {
+    dbMovieWeek,
+    dbMovieToday,
+    dbNewsMovie,
+    dbNewsSeries,
+    dbNewsActuallyCarousel,
+    loading,
+  } = useContext(ApiContext);
+  // Fin de Borrado luego del funcionamiento de la api
 
-const Main = () => {
-  let tokenNews = "22e0325d46b74ecaa518a4ab9e8d661f",
-    tokenMovieDb = "da6bf5b57ea46ebcbbb30175966e23a6",
-    urlNewsMovie = `https://newsapi.org/v2/everything?q=movie&apiKey=${tokenNews}`,
-    urlNewsSeries = `https://newsapi.org/v2/everything?q=tv-show&apiKey=${tokenNews}`,
-    urlMovieStreaming = `https://streaming-availability.p.rapidapi.com/search/basic`,
-    urlMovieToday = `https://api.themoviedb.org/3/movie/now_playing?api_key=${tokenMovieDb}&language=en-US&page=1`,
-    urlMovieWeek = `https://api.themoviedb.org/3/movie/upcoming?api_key=${tokenMovieDb}&language=en-US&page=1`;
+  // const {
+  //   dataNewsMovie,
+  //   dataNewsSerie,
+  //   dataMovieToday,
+  //   dataMovieWeek,
+  //   dataNewsActually,
+  //   loading,
+  // } = useContext(ApiContext);
 
-  //Inicio Para el carousel principal
-  let newsTvShowCarousel =
-      "https://newsapi.org/v2/everything?q=tv-show&language=en&apiKey=22e0325d46b74ecaa518a4ab9e8d661f",
-    newsHollywood =
-      "https://newsapi.org/v2/everything?q=hollywood&language=en&apiKey=22e0325d46b74ecaa518a4ab9e8d661f";
-  //Fin Para el carousel principal
-
-  //Noticia actual para el carousel principal, es el mejor
-  let urlNewsActually =
-    "https://api.currentsapi.services/v1/search?keywords=entertainment&language=en&category=entertainment&limit=200&apiKey=V_lTUr-ovXZ4r0-AY5kp7rJHvEswmCHDwfOwj75gdbsDkF5a";
-
-  const [dataNewsMovie, setDataNewsMovie] = useState(null);
-  const [dataNewsSerie, setDataNewsSerie] = useState(null);
-  const [dataMovieToday, setDataMovieToday] = useState(null);
-  const [dataMovieWeek, setdataMovieWeek] = useState(null);
-  const [dataMovieSearch, setDataMovieSearch] = useState(null);
-  const [dataNewsActually, setDataNewsActually] = useState(null); //Para el carousel principal
-  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const valor = false;
 
-  let urlFakeApi = "http://localhost:5000/articles";
-  useEffect(() => {
-    setLoading(true);
-    //helpHttp().get(urlNewsMovie)
-    helpHttp()
-      .get(urlFakeApi)
-      .then((res) => {
-        setDataNewsMovie(res);
-        setLoading(false);
-      });
-  }, [urlFakeApi]);
-
-  useEffect(() => {
-    setLoading(true);
-    //helpHttp().get(urlNewsSeries)
-    helpHttp()
-      .get(urlFakeApi)
-      .then((res) => {
-        setDataNewsSerie(res);
-        setLoading(false);
-      });
-  }, [urlFakeApi]);
-
-  /*
-  useEffect(() => {
-    setLoading(true);
-    const getData = async () => {
-      const [dataMToday, dataMWeek] = await Promise.all([
-           helpHttp().get(urlMovieToday),
-           helpHttp().get(urlMovieWeek)
-       ]);
-      setDataMovieToday(dataMToday);
-      setdataMovieWeek(dataMWeek);
-    };
-    getData();
-    setLoading(false);
-  }, [urlMovieToday,urlMovieWeek]);
-  */
-
-  /*useEffect(() => {
-    setLoading(true);
-    const getDataCarousel = async () => {
-      const dataCarousel = await Promise.all([
-        helpHttp().get(urlNewsActually)
-      ])
-      setDataNewsActually(dataCarousel);
-      setLoading(false);
-    }
-    getDataCarousel();
-  }, [urlNewsActually]);*/
+  const convertToSlug = (Text) => {
+    return Text.toLowerCase()
+      .replace(/ /g, "-")
+      .replace(/[^\w-]+/g, "");
+  };
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -114,30 +56,17 @@ const Main = () => {
       }
       const [data] = await Promise.all([helpHttp().get(urlSearchMovie)]);
       setDataMovieSearch(data);
-
+      let params = convertToSlug(e.target.search.value);
       e.target.search.value = "";
+
+      navigate(`/busqueda/${params}`, { dataMovieSearch });
     }
   };
 
-  // console.log(dbNewsActuallyCarousel);
   return (
     <main className="flex-grow-1 bg-white bg-md-light container-page">
       {/* Inicio Titulo Pagina */}
-      <section className="title-page d-flex flex-row bg-light align-items-center justify-content-center">
-        <aside>
-          <h1 className="fw-bold">
-            {/* <img src={filmadora} className="d-none d-md-inline-block" width="80" height="80" alt="" /> */}
-            <img
-              src={cinta}
-              className="d-none d-md-inline-block"
-              width="80"
-              height="80"
-              alt=""
-            />
-            CINEPOCA
-          </h1>
-        </aside>
-      </section>
+      <CineTitle />
       {/* Fin Titulo Pagina */}
 
       {/* Inicio Carousel */}
@@ -155,12 +84,18 @@ const Main = () => {
           <h2 className="fw-bold">CINE</h2>
         </aside>
         <aside className="border-top w-100 text-center pt-2 d-flex flex-column align-items-center justify-content-center">
-          <a href="/" className="text-decoration-none">
+          <Link to="/peliculas-recomendadas" className="text-decoration-none">
             <span className="text-warning">#</span>
             <span className="text-dark fw-bold text-hover">
               Películas recomendadas
             </span>
-          </a>
+          </Link>
+          {/* <a href="/" className="text-decoration-none">
+            <span className="text-warning">#</span>
+            <span className="text-dark fw-bold text-hover">
+              Películas recomendadas
+            </span>
+          </a> */}
         </aside>
       </section>
 
