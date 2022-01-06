@@ -1,5 +1,6 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { ApiProvider } from "./context/ApiContext";
 import { AuthProvider } from "./context/AuthContext";
 import { navBarList, btnList } from "./functions/functionURL";
 
@@ -21,7 +22,7 @@ import Error404 from "./components/Error404";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
 import SearchData from "./components/SearchData";
-import { ApiProvider } from "./context/ApiContext";
+import SearchDataArticle from "./components/SearchDataArticle";
 
 function App() {
   const [dataMovieSearch, setDataMovieSearch] = useState(null);
@@ -48,7 +49,10 @@ function App() {
       <AuthProvider>
         <ApiProvider>
           <HashRouter>
-            <Header />
+            <Header
+              dataMovieSearch={dataMovieSearch}
+              setDataMovieSearch={setDataMovieSearch}
+            />
             <Routes>
               <Route
                 exact
@@ -76,6 +80,12 @@ function App() {
                 exact
                 path="/busqueda/:search"
                 element={<SearchData data={dataMovieSearch} />}
+              />
+
+              <Route
+                exact
+                path="/busqueda/articulo/:elemento"
+                element={<SearchDataArticle data={dataMovieSearch} />}
               />
               {/* Fin Rutas saliendo de Home */}
               <Route exact path="/" element={<PrivateRoute />}>

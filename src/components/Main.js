@@ -10,8 +10,11 @@ import CineTitle from "./CineTitle";
 import Carousel from "./Carousel";
 import News from "./News";
 import Loader from "./Loader";
+
 import "../styles/main.css";
 import "../styles/all-page.css";
+import { urlMovieSearch } from "../api/service";
+import { convertToSlug } from "../functions/functionsGeneral";
 
 const Main = ({ dataMovieSearch, setDataMovieSearch }) => {
   // Borrar luego del funcionamiento de la api
@@ -34,15 +37,8 @@ const Main = ({ dataMovieSearch, setDataMovieSearch }) => {
   //   loading,
   // } = useContext(ApiContext);
 
-  const navigate = useNavigate();
-
   const valor = false;
-
-  const convertToSlug = (Text) => {
-    return Text.toLowerCase()
-      .replace(/ /g, "-")
-      .replace(/[^\w-]+/g, "");
-  };
+  const navigate = useNavigate();
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -50,9 +46,14 @@ const Main = ({ dataMovieSearch, setDataMovieSearch }) => {
       let anio = /[1|2][0-9]{3}/g;
       let urlSearchMovie = "";
       if (anio.test(e.target.search.value)) {
-        urlSearchMovie = `http://www.omdbapi.com/?apikey=d2900ed9&s=${e.target.search.value}&y=${e.target.search.value}`;
+        //urlSearchMovie = `http://www.omdbapi.com/?apikey=d2900ed9&s=${e.target.search.value}&y=${e.target.search.value}`;
+        urlSearchMovie = urlMovieSearch(
+          e.target.search.value,
+          e.target.search.value
+        );
       } else {
-        urlSearchMovie = `http://www.omdbapi.com/?apikey=d2900ed9&s=${e.target.search.value}`;
+        //urlSearchMovie = `http://www.omdbapi.com/?apikey=d2900ed9&s=${e.target.search.value}`;
+        urlSearchMovie = urlMovieSearch(e.target.search.value);
       }
       const [data] = await Promise.all([helpHttp().get(urlSearchMovie)]);
       setDataMovieSearch(data);

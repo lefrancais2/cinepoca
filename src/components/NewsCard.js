@@ -19,10 +19,9 @@ const NewsCard = ({ element }) => {
   let title = shortTitle(element);
 
   return (
-    <article className="d-flex flex-row justify-content-start">
+    <article className="news-card-article">
       <figure className="img-news-thumb-block">
         <div>
-          {/* <img src="https://placeimg.com/240/135/nature" alt="" /> */}
           <img
             src={element.urlToImage}
             alt=""

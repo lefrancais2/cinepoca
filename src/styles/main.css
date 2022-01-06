@@ -424,6 +424,28 @@ main section {
 .subtitle-news {
   margin-bottom: 20px;
 }
+.news-card-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .news-card-article {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+  }
+  .news-card-article figure img {
+    width: 100%;
+    height: 200px;
+  }
+  .link-title-news {
+    font-size: 10px;
+  }
+}
+
 .block-articles-movie-news {
   margin-bottom: 1rem;
 }
@@ -450,6 +472,7 @@ main section {
   /* width: 240px;
   height: 135px; */
   width: 50vh;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 640px) {
@@ -504,7 +527,8 @@ main section {
     margin: 0;
   }
   div.block-info-movie-news div.link-title-news a {
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: bold;
   }
 }
 /********************** Fin Seccion News Movie ***************************/

@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 
 import {
+  urlMovieSearch,
   urlMovieToday,
   urlMovieWeek,
   urlNewsActually,

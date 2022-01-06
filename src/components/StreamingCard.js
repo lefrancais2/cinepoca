@@ -2,9 +2,15 @@ import "../styles/main.css";
 
 const StreamingCard = ({ title, subtitle, element }) => {
   //console.log(element);
+
+  let movies = "";
+  element.forEach((el) => {
+    if (el.title) movies += `${el.title}, `;
+    else movies += el.name;
+  });
   return (
     <a className="streaming-card text-decoration-none" href="#ads">
-      <figure className="d-flex flex-row flex-wrap align-items-start justify-content-start">
+      <figure className="d-flex flex-row flex-wrap align-items-start justify-content-start mb-0">
         {element &&
           element.map((el, index) => (
             <img
@@ -58,6 +64,16 @@ const StreamingCard = ({ title, subtitle, element }) => {
           </p>
         </div>
       </figcaption>
+      <p
+        style={{
+          width: "320px",
+          fontSize: "10px",
+          height: "20px",
+          color: "gray",
+        }}
+      >
+        {movies}
+      </p>
     </a>
   );
 };

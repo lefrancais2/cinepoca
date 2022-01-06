@@ -29,6 +29,35 @@ header {
   }
 }
 
+#layer-opacity {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 66px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+.form-search-layer {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.form-search-layer input {
+  width: 90%;
+}
+.form-search-layer input::placeholder {
+  font-size: 12px;
+}
+.layer-active {
+  visibility: hidden;
+}
+.icon-search {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: rgb(24, 101, 168);
+}
+
 .navbar-active {
   color: black !important;
   background-color: white;

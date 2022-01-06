@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import StreamingCard from "./StreamingCard";
+import { dbBestMovieStreaming } from "../api/dbNews";
 import { helpHttp } from "../helpers/helpHttp";
 import "../styles/main.css";
 import "../styles/carousel-movies.css";
@@ -21,14 +22,20 @@ const StreamingCarouselMovie = () => {
   let url1 = `https://api.themoviedb.org/3/trending/movie/day?api_key=${token}&page=1`,
     url2 = `https://api.themoviedb.org/3/trending/movie/day?api_key=${token}&page=2`;
 
+  //https://api.themoviedb.org/3/trending/movie/day?api_key=da6bf5b57ea46ebcbbb30175966e23a6&page=1
+
   useEffect(() => {
     const getData = async () => {
-      const [data1] = await Promise.all([helpHttp().get(url1)]);
-      setDataMovie(data1);
-      setDataNetflix(divideMovies(data1.results));
-      setDataAmazon(divideMovies(data1.results, 4));
-      setDataHBO(divideMovies(data1.results, 8));
-      setDataDisney(divideMovies(data1.results, 12));
+      //const [data1] = await Promise.all([helpHttp().get(url1)]);
+      //setDataMovie(data1);
+      // setDataNetflix(divideMovies(data1.results));
+      // setDataAmazon(divideMovies(data1.results, 4));
+      // setDataHBO(divideMovies(data1.results, 8));
+      // setDataDisney(divideMovies(data1.results, 12));
+      setDataNetflix(divideMovies(dbBestMovieStreaming.results));
+      setDataAmazon(divideMovies(dbBestMovieStreaming.results, 4));
+      setDataHBO(divideMovies(dbBestMovieStreaming.results, 8));
+      setDataDisney(divideMovies(dbBestMovieStreaming.results, 12));
     };
     getData();
   }, [url1]);
