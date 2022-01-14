@@ -7,6 +7,7 @@ import {
   urlNewsActually,
   urlNewsMovie,
   urlNewsSeries,
+  urlIMDBtarilers,
 } from "../api/service";
 
 //Borrar luego cuando funcionen las api
@@ -16,6 +17,7 @@ import {
   dbNewsMovie,
   dbNewsSeries,
   dbNewsActuallyCarousel,
+  dbIMDBTrailersYoutube,
 } from "../api/dbNews";
 //Fin de borrado
 
@@ -27,72 +29,91 @@ const ApiProvider = ({ children }) => {
   const [dataNewsMovie, setDataNewsMovie] = useState(null);
   const [dataNewsSerie, setDataNewsSerie] = useState(null);
   const [dataMovieToday, setDataMovieToday] = useState(null);
-  const [dataMovieWeek, setdataMovieWeek] = useState(null);
+  const [dataMovieWeek, setDataMovieWeek] = useState(null);
   const [dataNewsActually, setDataNewsActually] = useState(null); //Para el carousel principal
+  const [dataMovieTrailers, setDataMovieTrailers] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [loadForNewsMovie, setLoadForNewsMovie] = useState(false);
+  const [loadForNewsSerie, setLoadForNewsSerie] = useState(false);
+  const [loadForMovieToday, setLoadForMovieToday] = useState(false);
+  const [loadForDataCarousel, setLoadForDataCarousel] = useState(false);
 
-  let urlFakeApi = "http://localhost:5000/articles";
   useEffect(() => {
     //   Busqueda de noticias de cine
-    setLoading(true);
-    //helpHttp().get(urlNewsMovie)
-    helpHttp()
-      .get(urlFakeApi)
-      .then((res) => {
-        setDataNewsMovie(res);
-        setLoading(false);
-      });
+    // (async () => {
+    //   setLoadForNewsMovie(true);
+    //   helpHttp()
+    //     .get(
+    //       "https://newsapi.org/v2/everything?q=movie&apiKey=22e0325d46b74ecaa518a4ab9e8d661f"
+    //     )
+    //     .then((res) => {
+    //       console.log("res", res);
+    //       setDataNewsMovie(res);
+    //     });
+    //   setLoadForNewsMovie(false);
+    //   console.log("dataNewsMovie", dataNewsMovie);
+    // })();
+    setLoadForNewsMovie(true);
+    const getDataNews = async () => {
+      const [news] = await Promise.all([helpHttp(10000).get(urlNewsMovie)]);
+      setDataNewsMovie(news);
+      console.log("news 2", dataNewsMovie);
+    };
+    getDataNews();
+    setLoadForNewsMovie(false);
     //   Fin de busqueda de noticias de cine
 
     // Busqueda de noticias de series
-    setLoading(true);
-    //helpHttp().get(urlNewsSeries)
-    helpHttp()
-      .get(urlFakeApi)
-      .then((res) => {
-        setDataNewsSerie(res);
-        setLoading(false);
-      });
+    setLoadForNewsSerie(true);
+    const getDataNewSeries = async () => {
+      const [newsSeries] = await Promise.all([
+        helpHttp(10000).get(urlNewsSeries),
+      ]);
+      setDataNewsSerie(newsSeries);
+    };
+    getDataNewSeries();
+    setLoadForNewsSerie(false);
     // Fin Busqueda de noticias de series
-  }, [urlFakeApi]);
 
-  //Por si acaso, pero no creo que sirva
-  //   useEffect(() => {
-  //     setLoading(true);
-  //     //helpHttp().get(urlNewsSeries)
-  //     helpHttp()
-  //       .get(urlFakeApi)
-  //       .then((res) => {
-  //         setDataNewsSerie(res);
-  //         setLoading(false);
-  //       });
-  //   }, [urlFakeApi]);
+    //Busqueda de Peliculas de actualidad
+    setLoadForMovieToday(true);
+    const getData = async () => {
+      const [dataMToday] = await Promise.all([
+        helpHttp(10000).get(urlMovieToday),
+      ]);
+      console.log(dataMToday);
+      setDataMovieToday(dataMToday);
+    };
+    getData();
+    setLoadForMovieToday(false);
+    // Fin de Busqueda de Peliculas de actualidad
 
-  //   useEffect(() => {
-  //     setLoading(true);
-  //     const getData = async () => {
-  //       const [dataMToday, dataMWeek] = await Promise.all([
-  //            helpHttp().get(urlMovieToday),
-  //            helpHttp().get(urlMovieWeek)
-  //        ]);
-  //       setDataMovieToday(dataMToday);
-  //       setdataMovieWeek(dataMWeek);
-  //     };
-  //     getData();
-  //     setLoading(false);
-  //   }, [urlMovieToday,urlMovieWeek]);
+    //Busqueda de Peliculas de actualidad
+    setLoadForMovieToday(true);
+    const getDataMovieWeek = async () => {
+      const [dataMWeek] = await Promise.all([
+        helpHttp(10000).get(urlMovieWeek),
+      ]);
+      console.log(dataMWeek);
+      setDataMovieWeek(dataMWeek);
+    };
+    getDataMovieWeek();
+    setLoadForMovieToday(false);
+    // Fin de Busqueda de Peliculas de actualidad
 
-  //   useEffect(() => {
-  //     setLoading(true);
-  //     const getDataCarousel = async () => {
-  //       const dataCarousel = await Promise.all([
-  //         helpHttp().get(urlNewsActually)
-  //       ])
-  //       setDataNewsActually(dataCarousel);
-  //       setLoading(false);
-  //     }
-  //     getDataCarousel();
-  //   }, [urlNewsActually]);
+    //Datos para el carousel principal
+    setLoadForDataCarousel(true);
+
+    const getDataCarousel = async () => {
+      const [dataCarousel] = await Promise.all([
+        helpHttp(20000).get(urlNewsActually),
+      ]);
+      setDataNewsActually(dataCarousel);
+      setLoadForDataCarousel(false);
+    };
+    getDataCarousel();
+    //Datos para el carousel principal
+  }, []);
 
   //   const data = {
   //   dataNewsMovie,
@@ -105,12 +126,22 @@ const ApiProvider = ({ children }) => {
 
   //Borrar luego de funcionamieno de las api
   const data = {
-    dbMovieWeek,
-    dbMovieToday,
-    dbNewsMovie,
-    dbNewsSeries,
-    dbNewsActuallyCarousel,
+    //dbMovieWeek,
+    dataMovieWeek,
+    //dbMovieToday,
+    dataMovieToday,
+    //dbNewsMovie,
+    dataNewsMovie,
+    //dbNewsSeries,
+    dataNewsSerie,
+    //dbNewsActuallyCarousel,
+    dataNewsActually,
+    dbIMDBTrailersYoutube,
     loading,
+    loadForNewsMovie,
+    loadForNewsSerie,
+    loadForMovieToday,
+    loadForDataCarousel,
   };
   //Fin de Borrado luego de funcionamieno de las api
 

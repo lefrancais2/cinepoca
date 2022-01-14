@@ -4,7 +4,11 @@ const ListMoviesCard = ({ data }) => {
       <article>
         <figure>
           <img
-            src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}
+            src={
+              (data.poster_path &&
+                `https://image.tmdb.org/t/p/w500${data.poster_path}`) ||
+              data.image
+            }
             alt={data.title}
           />
           <figcaption>

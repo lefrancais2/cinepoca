@@ -1,6 +1,6 @@
 import cinta from "../assets/cinta_orange.svg";
 
-const CineTitle = () => {
+const CineTitle = ({ display, alto, ancho }) => {
   return (
     <section className="title-page d-flex flex-row bg-light align-items-center justify-content-center">
       <aside>
@@ -8,10 +8,10 @@ const CineTitle = () => {
           {/* <img src={filmadora} className="d-none d-md-inline-block" width="80" height="80" alt="" /> */}
           <img
             src={cinta}
-            className="d-none d-md-inline-block"
-            width="80"
-            height="80"
-            alt=""
+            className={`${display} d-md-inline-block`}
+            width={ancho}
+            height={alto}
+            alt="logo"
           />
           CINEPOCA
         </h1>

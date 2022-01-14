@@ -1,2 +1,113 @@
-main {
+.Traile-destacado-title {
+  font-weight: bold;
+}
+.trailers-movie-article {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.trailers-movie-article a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trailers-movie-figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.trailers-movie-figure img {
+  width: 100%;
+  object-fit: cover;
+}
+.trailers-movie-figure div {
+  position: absolute;
+  z-index: 998;
+  top: 35%;
+  right: 45%;
+  color: white;
+}
+.trailers-movie-figure div i {
+  font-size: 30px;
+}
+.trailers-movie-figure div i:hover,
+.trailers-movie-figure figcaption:hover {
+  cursor: pointer;
+  color: rgb(255, 230, 7);
+  transition: all 0.5s ease-in;
+}
+.trailers-movie-figure figcaption {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  bottom: 0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .trailers-movie-article {
+    width: 50%;
+  }
+}
+
+.title-critics-top {
+  position: relative;
+  margin-bottom: 20px;
+}
+.title-critics:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2.5rem;
+  width: 5rem;
+  height: 0.25rem;
+  background: #fecc00;
+}
+.title-critics h2 {
+  text-align: center;
+  padding: 1.25rem 0.625rem 0;
+}
+
+.block-critics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.block-critics article {
+  width: 33%;
+  text-align: center;
+}
+.block-critics article a {
+  text-decoration: none;
+  color: gray;
+}
+.block-critics figcaption {
+  overflow-wrap: break-word;
+}
+.block-critics article figure {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 1020px) {
+  .block-critics article {
+    width: 25%;
+  }
+  .block-critic-movie {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .block-critic-movie > div:first-child {
+    width: 80%;
+  }
+  .block-critic-movie:last-child {
+    /* flex-grow: 1; */
+  }
 }

@@ -54,105 +54,7 @@ const Header = ({ dataMovieSearch, setDataMovieSearch }) => {
   return (
     <header className="position-sticky top-0">
       <nav className="navbar navbar-expand-md navbar-light bg-warning">
-        <div className="container-fluid items-navbar d-flex flex-row flex-md-column flex-wrap align-content-start">
-          <div className="d-flex flex-row justify-content-between">
-            <Link to="/" className="navbar-brand fw-bold flex-grow-1">
-              <img src={cinta} width="40" height="40" alt="" />
-              <span className="title-header">CINEPOCA</span>
-            </Link>
-            <div className="d-none d-lg-block">
-              <div className="form-search-layer">
-                <form onSubmit={handleSearch}>
-                  <input
-                    onKeyPress={handleKeyCode}
-                    type="search"
-                    name="search"
-                    placeholder="Introduce el nombre de pelicula"
-                    autoSave="off"
-                    autoComplete="off"
-                  />
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style={{ padding: "0", border: "none" }}
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div style={{ width: "90%" }}>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <Link
-                    to="/peliculas"
-                    className="nav-link active"
-                    aria-current="page"
-                  >
-                    PELICULAS
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to="/series" className="nav-link">
-                    SERIES
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to="/cartelera" className="nav-link">
-                    CARTELERA
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to="/noticias" className="nav-link">
-                    NOTICIAS
-                  </Link>
-                </li>
-
-                <li className="d-md-none">
-                  {!auth && (
-                    <Link to="/login" className="btn btn-primary">
-                      LOGIN/REGISTER<i className="fas fa-user"></i>
-                    </Link>
-                  )}
-                  {auth && (
-                    <Link to="/dashboard" className="btn btn-primary">
-                      Mi perfil
-                    </Link>
-                  )}
-                </li>
-              </ul>
-
-              <div className="d-none d-md-block btn-login-register">
-                {!auth && (
-                  <Link to="/login" className="btn btn-primary">
-                    LOGIN/REGISTER<i className="fas fa-user"></i>
-                  </Link>
-                )}
-                {auth && (
-                  <Link to="/dashboard" className="btn btn-primary">
-                    Mi perfil
-                  </Link>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className="container-fluid items-navbar">
+        <div className="container-fluid items-navbar">
           <Link to="/" className="navbar-brand fw-bold flex-grow-1">
             <img src={cinta} width="40" height="40" alt="" />
             <span className="title-header">CINEPOCA</span>
@@ -246,7 +148,7 @@ const Header = ({ dataMovieSearch, setDataMovieSearch }) => {
               )}
             </div>
           </div>
-        </div> */}
+        </div>
       </nav>
       <section className="header-message ">
         <div>

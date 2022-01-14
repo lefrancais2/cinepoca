@@ -12,26 +12,24 @@ const ListEstrenosMasEsperados = () => {
   const valor = false;
 
   let token = "da6bf5b57ea46ebcbbb30175966e23a6";
-  let url = `https://api.themoviedb.org/3/movie/upcoming?api_key=${token}&language=es`;
+  let url = `https://api.themoviedb.org/3/movie/upcoming?api_key=${token}&language=en`;
 
-  // useEffect(() => {
-  //     const getData = async () => {
-  //         setLoading(true);
-  //         const [movieData] = await Promise.all([
-  //             helpHttp().get(url)
-  //         ]);
-  //         setData(movieData);
-  //     };
-  //     getData();
-  //     setLoading(false);
-  // }, [url]);
+  useEffect(() => {
+    const getData = async () => {
+      setLoading(true);
+      const [movieData] = await Promise.all([helpHttp().get(url)]);
+      setData(movieData);
+    };
+    getData();
+    setLoading(false);
+  }, [url]);
 
   // Inicio Solo para prueba
-  useEffect(() => {
-    setData(dbNextPremiere);
+  // useEffect(() => {
+  //   setData(dbNextPremiere);
 
-    setLoading(false);
-  }, []);
+  //   setLoading(false);
+  // }, []);
   // Fin Solo para prueba
 
   const handleButtonMore = (e) => {

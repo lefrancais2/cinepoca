@@ -20,7 +20,7 @@ const News = ({ title, data, loading }) => {
         {/* Fin Solucion realizada */}
 
         {/* Inicio Solo para pruebas */}
-        {!loading &&
+        {data &&
           data.articles.map((el, index) =>
             index < 6 ? <NewsCard key={index} element={el} /> : ""
           )}

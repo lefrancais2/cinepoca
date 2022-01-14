@@ -7,3 +7,5 @@ export const tokenMovieDb = "da6bf5b57ea46ebcbbb30175966e23a6";
 //token para la web api.currentsapi
 export const tokenNewsActually =
   "V_lTUr-ovXZ4r0-AY5kp7rJHvEswmCHDwfOwj75gdbsDkF5a";
+
+export const tokenIMDb = "k_isrtns8j";

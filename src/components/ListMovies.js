@@ -6,7 +6,7 @@ import "../styles/carousel-movies.css";
 let initialStateRight = 20;
 let initialStateLeft = 0;
 
-const ListMovies = ({ clase, title, loading, data, num }) => {
+const ListMovies = ({ clase, title, loading, data, num, limit }) => {
   const [btnRight, setBtnRight] = useState(initialStateRight);
   const [btnLeft, setBtnLeft] = useState(initialStateLeft);
   const [elementRight, setElementRight] = useState(null);
@@ -111,7 +111,10 @@ const ListMovies = ({ clase, title, loading, data, num }) => {
       <div className="carousel">
         <ul className="slides">
           {data &&
-            data.map((el, index) => <ListMoviesCard key={index} data={el} />)}
+            data.map(
+              (el, index) =>
+                index < limit && <ListMoviesCard key={index} data={el} />
+            )}
         </ul>
       </div>
     </>

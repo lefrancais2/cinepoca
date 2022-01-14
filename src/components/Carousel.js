@@ -1,5 +1,6 @@
 import "../styles/main.css";
 import CarouselItem from "./CarouselItem";
+import Loader from "./Loader";
 
 const Carousel = ({ data, loading }) => {
   const searchCategory = (element) => {
@@ -37,8 +38,9 @@ const Carousel = ({ data, loading }) => {
         ></button>
       </div> */}
       <div className="carousel-inner">
+        {/* {loading && <Loader />} */}
         {data &&
-          data.map((el, index) =>
+          data.news.map((el, index) =>
             index === 0 ? (
               <CarouselItem key={index} element={el} active="active" />
             ) : el.image !== "None" && searchCategory(el.category) ? (
